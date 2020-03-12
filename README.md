@@ -15,3 +15,10 @@ Note: This was built using Python 3.7+ and Django 3.0.4.
 + Run `python manage.py runserver`
 + Go to "http://localhost:8000" to see the site and "http://localhost:8000/admin" to add poll questions and answers.
 
+## Preview
+
+**Link**: Coming soon...
+
+<p align="center">
+    <img src="assets/preview.png">
+</p>
