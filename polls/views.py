@@ -25,7 +25,13 @@ def detail(request, question_id):
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    context = { 'question': question }
+    choice_list = question.choice_set.all()
+    total_votes = sum(choice.votes for choice in choice_list)
+
+    for choice in choice_list:
+        choice.percentage = round(choice.votes / total_votes * 100)
+
+    context = { 'question': question, 'choice_list': choice_list }
     return render(request, 'polls/results.html', context)
 
 

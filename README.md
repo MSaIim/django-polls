@@ -20,5 +20,6 @@ Note: This was built using Python 3.7+ and Django 3.0.4.
 **Link**: Coming soon...
 
 <p align="center">
-    <img src="assets/preview.png">
+    <img src="assets/select_poll.png" width="341" height="624">
+    <img src="assets/result_list.png" width="341" height="624">
 </p>
