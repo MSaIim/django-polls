@@ -1,0 +1,23 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+
+    {% if question_list %}
+    <div>
+        <h1 class="font-effect-outline">Available Polls</h1>
+    </div>
+
+    <div class="question-list">
+        {% for question in question_list %}
+        <a class="font-effect-outline" href="{% url 'polls:detail' question.id %}">
+            <div class="question-text">{{ question.question_text }}</div>
+            <div class="question-date">{{ question.pub_date }}</div>
+        </a>
+        {% endfor %}
+    </div>
+
+    {% else %}
+    <p>No polls are available</p>
+    {% endif %}
+
+{% endblock %}

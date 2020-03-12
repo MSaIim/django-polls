@@ -1,0 +1,134 @@
+/** ================================
+ ** General
+ ** ==============================*/
+* {
+    margin: 0;
+}
+
+body {
+    color: #fff;
+    background-color: #0e1622;
+    background: url('images/background.jpg') no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    height: 99.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0 auto;
+    width: 30%;
+    min-height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    background: rgba(14, 22, 34, 0.4);
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Coda', cursive;
+    color: #00f3ff !important;
+    margin-bottom: 20px;
+}
+
+/** ================================
+ ** Footer
+ ** ==============================*/
+footer {
+    font-size: 20px;
+    background: rgba(14, 22, 34, 0.8);
+    padding: 20px;
+    bottom: -3px;
+    position: relative;
+    font-family: 'Coda', cursive;
+    border-top: 1px solid rgb(104, 103, 103);
+}
+
+#copyright {
+    text-align: left;
+    width: 48%;
+    float: left;
+    position: relative;
+    top: 5px;
+}
+
+#social-links {
+    text-align: right;
+    width: 48%;
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+#social-links img {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    opacity: 0.8;
+}
+
+#social-links img:hover {
+    opacity: 1;
+}
+
+/** ================================
+ ** Questions
+ ** ==============================*/
+.question-list a {
+    display: block;
+    list-style: none;
+    width: 80%;
+    border: 2px solid rgb(140, 34, 167);
+    margin: 0 auto;
+    background: rgba(30, 14, 34, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.question-list a:hover {
+    border: 2px solid #fff;
+}
+
+.question-text {
+    font-family: 'Coda', cursive;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.question-date {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/** ================================
+ ** Media queries
+ ** ==============================*/
+@media only screen and (max-width: 1300px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+}
