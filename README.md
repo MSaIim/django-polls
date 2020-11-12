@@ -4,7 +4,7 @@ A polls application where users can vote on questions. Admins and allowed users 
 
 ## Setup
 
-Note: This was built using Python 3.7+ and Django 3.0.4.
+Note: This was built using Python 3.7+ and Django 3.0.7.
 
 + Create virtual environment: `python -m venv <environment_name>`
 + Use virtual environment: `source <environment_path>/Scripts/activate`
